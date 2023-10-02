@@ -1,0 +1,6 @@
+export { Homepage } from './Homepage'
+export { Service } from './Service'
+export {AboutUs} from './AboutUs'
+export { Portfolio } from './Portfolio'
+export { BlogContentPage } from './BlogContentPage'
+export { Blog } from './Blog'
