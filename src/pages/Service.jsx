@@ -1,3 +1,4 @@
+import { Proceso, ProductosMenu, ProductoSection } from "../components"
 
 export const Service = () => {
   return (
@@ -10,10 +11,12 @@ export const Service = () => {
           
         </div>
       </div>
-      <img src="https://source.unsplash.com/random/480x320" alt="" className="w-3/6  mx-auto mb-12 -mt-10 rounded-lg shadow-md lg:-mt-60 bg-gray-500" />
+      
     </section>
     <section>
-
+    <ProductosMenu/>
+    <ProductoSection/>
+    <Proceso/>
     </section>
 
 

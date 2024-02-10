@@ -11,6 +11,17 @@ export default {
       lg: "1200px",
       xl: "1700px",
     },
+    extend: {
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }                    
+    },
   },
   plugins: [],
 };

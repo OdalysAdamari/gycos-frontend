@@ -1,8 +1,6 @@
-import { useState } from "react"
 
 export const SliderClients = () => {
-    const [currentSlide, setCurrentSlide] = useState(0)
-
+  
     const clients = [
         {
             id: 1,
@@ -26,31 +24,25 @@ export const SliderClients = () => {
         }        
     ]
 
-    const prevSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev -1)
-    }
-
-    const nextSlide = () => {
-        setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev +1)
-    }
+    
 
   return (
-    <div className='sliderClients w-full overflow-auto relative '>
-        <div className='sliderClientsContainer flex px-4 space-x-24 ' style={{transform:`translateX(-${currentSlide * 50}vw)` }}>
-            {clients.map(client => 
-                <div key={client.id} className="flex items-center align-middle rounded-xl   w-full p-4">
-                <img src={client.img} className=" p-4 "/>
-                </div>
+    <div className='w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] '>
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            {clients.map(client =>
+                <li key={client.id}>
+                    <img src={client.img} className=" p-4 "/>
+                </li>
                 )}
-        </div>
-        <div className='flex absolute bottom-2 right-9 w-36  text-black'>
-            <div onClick={prevSlide} className='border-2 cursor-pointer'>
-                
-            </div>
-            <div onClick={nextSlide} className='border-2 cursor-pointer'>
-                
-            </div>
-        </div>
+        </ul>
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            {clients.map(client =>
+                <li key={client.id}>
+                    <img src={client.img} className=" p-4 "/>
+                </li>
+                )}
+        </ul>
     </div>
   )
 }
+

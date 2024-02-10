@@ -37,7 +37,26 @@ export const Homepage = () => {
 
     return (
     <div className="absolute flex flex-col items-center bg-[#f0f0f0] w-screen ">
-      <Slider/>
+      <section className="bg-gray-800 text-gray-100 w-full" style={{ 
+      backgroundImage: `url("https://images.unsplash.com/photo-1593106421907-821f022cf8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")` 
+    }}>
+          <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+              <h1 className="text-5xl font-bold leadi sm:text-6xl">Ac mattis
+                <span className="text-green-400">senectus</span>erat pharetra
+              </h1>
+              <p className="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
+                <br className="hidden md:inline lg:hidden"/>turpis pulvinar, est scelerisque ligula sem
+              </p>
+              <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-green-400 text-gray-900">Suspendisse</a>
+                <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded border-gray-100">Malesuada</a>
+              </div>
+            </div>
+            <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            </div>
+          </div>
+      </section>
 
       <div className="flex flex-col md:w-5/6 xl:w-4/5 my-6 px-3 md:px-0 md:my-10 rounded-2xl justify-center md:justify-around w-screen  md:h-[50vh] md:max-h-[50vh]">
         <div className="flex flex-col justify-center items-center mx-2 my-4 md:m-x10">
@@ -49,7 +68,7 @@ export const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center w-screen bg-[#d5dcde]  ">
+      <div className="flex flex-col md:flex-row items-center w-screen bg-blue-600  ">
         <div className="flex flex-col md:flex-row w-screen md:w-1/2  ">
           <img src="https://images.pexels.com/photos/3823218/pexels-photo-3823218.jpeg?auto=compress&cs=tinysrgb&w=300" className="w-full h-full"></img>
         </div>
@@ -58,8 +77,8 @@ export const Homepage = () => {
           <p className="flex font-bold text-2xl text-center md:text-left md:text-3xl w-screen md:w-4/5 px-3 md:px-0  ">Mas de 4 años de experiencia</p>
           <h1 className="flex font-semibold text-center md:text-left text-xl md:text-2xl w-screen md:w-5/6 px-3 my-4 md:my-10 "> Contamos con experiencia de 40+ proyectos de instalacion, programacion, y puesta en marcha de robots y celdas automatizadas </h1>
           </div>
-          <div className="px-4 pt-4 md:pt-0 flex w-full    ">
-            <Button/>
+          <div className="pl-24 pt-4 md:pt-0 flex w-full    ">
+            <a className="  cursor-pointer p-2 md:p-3 w-36 md:w-56 drop-shadow-md bg-gradient-to-br hover:bg-gradient-to-tl from-green-400 to-green-400 rounded-md text-center text-md md:text-xl font-semibold">Boton</a>
           </div>
         </div>
       </div>
@@ -69,7 +88,7 @@ export const Homepage = () => {
           <div className="flex flex-col justify-center items-start w-full md:w-1/2">
             <h2 className="text-xl md:text-5xl font-bold ">Nuestro proceso de cotizacion</h2>
             <span className="block mb-2 text-sm md:text-xl font-medium uppercase  p-0 md:pr-10">How it works. Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id</span>
-            <Button/>
+            <a className="ursor-pointer p-2 md:p-3 w-36 md:w-56 drop-shadow-md bg-gradient-to-br hover:bg-gradient-to-tl from-green-400 to-green-400 rounded-md text-center text-md md:text-xl font-semibold">Boton</a>
           </div>
           <div className="grid gap-6 lg:grid-rows-3 w-1/2 justify-items-center">
             <div className="flex p-4 space-y-4 rounded-md dark:bg-gray-900 ">
@@ -140,7 +159,7 @@ export const Homepage = () => {
             </div>
           </a>
 
-          <div className="grid w-full justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid w-full justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Card className="drop-shadow-2xl" blogs={blogs?blogs:""}/>
           </div>
           <div className="w-full flex justify-center m-4">

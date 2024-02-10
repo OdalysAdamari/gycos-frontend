@@ -27,7 +27,7 @@ export const Blog = () => {
                 </div>
             </div>
           </a>
-            <div className="grid sm:grid-cols-3 gap-8 px-4 text-black">
+            <div className="grid sm:grid-cols-4 gap-5 px-4 text-black">
                 
                     <Card className="drop-shadow-2xl" blogs={blogs}/>
                 
