@@ -3,7 +3,7 @@ import {
   RouterProvider,
   Outlet
  } from "react-router-dom"
-import { Footer, Navbar } from "./components"
+import { Footer,  Navbar } from "./components"
 import { Homepage, Service, AboutUs, Portfolio, BlogContentPage, Blog } from "./pages"
 import { Contact } from "./pages/Contact"
 
@@ -12,7 +12,7 @@ const Layout = () =>{
 
   
   return(
-    <div className="flex flex-col">
+    <div className="pt-[4.75rem] lg:pt[5.25rem] overflow-hidden">
       <Navbar/>
       <Outlet/>
       <Footer/>

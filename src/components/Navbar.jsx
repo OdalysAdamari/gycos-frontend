@@ -3,53 +3,59 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 import {logonav} from '../assets'
-import { Link } from 'react-router-dom';
+
 
 
 export const Navbar = () => {
-const [nav, setNav] = useState(false);
+ const [openNav, setOpenNav] = useState(false)
+ const toggleNav = () => {
+  if (openNav) {
+    setOpenNav(false);
+  } else {
+    setOpenNav(true);
+  }
+ }
 
-const handleNav = () => {
-  setNav(!nav)
-}
-
+ const handleClick = () => {
+  setOpenNav(false);
+ }
   return ( 
-   <nav className="w-screen h-[80px] md:h-20 z-10 fixed bg-black text-white ">
-    <div className='flex justify-between items-center w-full h-full md:max-w[1240px] '>
-        <div className='flex items-center'>
-          <img src={logonav} alt="logo" className='sm:ml-10 ss:ml-10 md:ml-3 w-full h-[25px] opacity-[80%]' />
-        </div>
+   <div className={`fixed top-0 w-full z-50 bg-n-8/90 backdrop-blur-sm border-b border-n-6 lg:bg-n-8/90 lg:backdropbackdrop-blur-sm
+   ${openNav ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm "}`}>
+    <div className='flex items-center px-5 lg-px-7.5 xl:px-10 max-lg:py-4'>
+        <a className='block w-[12rem] xl:mr-8'>
+          <img src={logonav} width={190} height={40} alt="logoGYCOS" href="/"  />
+        </a>
 
-        <div className='flex items-center sm:mr-10 ss:mr-10 md:mr:3'>
-          <ul className='hidden md:flex'>
-            <li className='p-3'><Link to="/">Inicio</Link> </li>
-            <li className='p-3'><Link to="/service">Servicios</Link></li>
-            <li className='p-3'><Link to='/portfolio'>Portafolio</Link></li>
-            <li className='p-3'><Link to='/aboutus'>Sobre nosotros</Link></li>
-            <li className='p-3'><Link to='/blog'>Blog</Link></li>
-            <li className='p-3'><Link to='/contact'>Contacto</Link></li>
-            <li className='p-3'>Esp</li>
-          </ul>
-        </div>
-        <div onClick={handleNav} className='md:hidden mr-3'>
-          {nav ? <CloseIcon className='w-[28px] h-[28px] text-white'/> : <MenuIcon className='w-[28px] h-[28px] text-white' /> }
-        </div>
+        <nav className={`${openNav ? 'flex' : 'hidden'} fixed top-[5rem] left-0 right-0 bottom-0
+        lg:static lg:flex lg:mx-auto lg:bg-transparent h-screen lg:h-auto bg-n-8/90 backdrop-blur-sm `}>
+          <div className='relative z-2 flex flex-col items-center justify-center m-auto
+          lg:flex-row   w-full '>
+            <a href='/service' className={`block relative text-2xl uppercase transition-colors hover:text-green-500
+            px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold`} onClick={handleClick}> Servicios</a>
+            <a href='/portfolio' className={`block relative text-2xl uppercase transition-colors hover:text-green-500
+            px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold`} onClick={handleClick}>Portafolio</a>
+            <a href='/aboutus' className={`block relative text-2xl uppercase transition-colors hover:text-green-500
+            px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold`} onClick={handleClick}>Sobre Nosotros</a>
+            <a href='/blog' className={`block relative text-2xl uppercase transition-colors hover:text-green-500
+            px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold`} onClick={handleClick}>Blog</a>
+            <a href='/contact' className={`block relative text-2xl uppercase transition-colors hover:text-green-500
+            px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg:font-semibold`} onClick={handleClick}>Contacto</a>
+
+            <div className='absolute inset-0 pointer-events-none lg:hidden'> 
+              <div className='absolute inset-0 opacity-[0.3]'></div>
+            </div>
+          </div>
+        </nav>
+
+        <a href='#esp' className='hidden mr-8 transition-colors hover:text-green-500 lg:block'>ESP</a>
+        <button className='ml-auto lg:hidden' onClick={toggleNav}>
+          {openNav ? <CloseIcon/> : <MenuIcon openNav={openNav} /> }
+        </button>
+        
     </div>
    
-
-    
-    
-        <ul className={nav?'absolute bg-black w-full px-8 md:hidden':'hidden'}>
-            <li className='p-3'><Link to="/">Inicio</Link> </li>
-            <li className='p-3'>Servicios</li>
-            <li className='p-3'><Link to='/portfolio'>Portafolio</Link></li>
-            <li className='p-3'><Link to='/aboutus'>Sobre nosotros</Link></li>
-            <li className='p-3'><Link to='/blog'>Blog</Link></li>
-            <li className='p-3'><Link to='/contact'>Contacto</Link></li>
-            <li className='p-3'>Esp</li>
-        </ul>
-    
-   </nav>
+   </div>
   )
 }
 
