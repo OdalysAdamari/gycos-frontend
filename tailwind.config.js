@@ -44,6 +44,7 @@ export default {
         },
       },
       fontFamily: {
+        inter: ['Inter', 'sans-serif'],
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
@@ -121,14 +122,14 @@ export default {
           "@apply text-sm": {},
         },
         ".tagline": {
-          "@apply font-grotesk font-light text-xs tracking-tagline uppercase":
+          "@apply font-inter font-light text-xs tracking-tagline uppercase":
             {},
         },
         ".quote": {
-          "@apply font-code text-lg leading-normal": {},
+          "@apply font-inter text-lg leading-normal": {},
         },
         ".button": {
-          "@apply font-code text-xs font-bold uppercase tracking-wider": {},
+          "@apply font-inter text-xs font-bold uppercase tracking-wider": {},
         },
       });
       addUtilities({
