@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch';
 
 
 export const Blog = () => {
-  const { loading, data, error } = useFetch('http://localhost:1337/api/blogs?populated=*');
+  const { loading, data, error } = useFetch('http://gycos.juanpabloguleal.com/api/blogs?populate=*');
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
   const blogs = data.data;

@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch"
 
 export const BlogContentPage = () => {
 
-  let {loading, data, error} = useFetch('http://localhost:1337/api/blogs?populated=*')
+  let {loading, data, error} = useFetch('http://gycos.juanpabloguleal.com/api/blogs?populate=*')
   if(loading) return <p>loading..</p>
   if(error) return <p>Error</p>
   let blogs = data.data

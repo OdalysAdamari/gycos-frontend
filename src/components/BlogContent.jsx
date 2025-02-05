@@ -22,7 +22,7 @@ export const BlogContent = ({blogs}) => {
       <div className="col-span-2 space-y-5">
         <img
           className='h-56 w-full object-cover rounded-lg shadow-md'
-          src={blog.coverImg}
+          src={blog.attributes.blogCoverImg.data ? blog.attributes.blogCoverImg.data.attributes.url: '/UI/src/assets/logonav.svg' }
           alt="Imagen del blog"
         />
         <h1 className="font-bold text-3xl md:text-4xl">{blog.attributes.blogTitle}</h1>
@@ -32,10 +32,10 @@ export const BlogContent = ({blogs}) => {
       </div>
 
       {/* Sección del Autor */}
-      <div className="bg-white rounded-lg h-[20%] shadow-lg py-5 flex flex-col items-center space-y-4">
+      <div className="bg-white rounded-lg shadow-lg py-5 flex flex-col items-center space-y-4">
         <img
-          className='w-24 h-24 rounded-full object-cover'
-          src={blog.authorImg}
+          className='rounded-full object-cover'
+          src={blog.attributes.authorIcon.data ? blog.attributes.authorIcon.data[0].attributes.url: '/UI/src/assets/logonav.svg' }
           alt="Imagen del autor"
         />
         <h2 className="font-bold text-xl text-center">{blog.attributes.authorName}</h2>

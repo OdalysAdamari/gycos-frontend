@@ -14,7 +14,7 @@ import useFetch from "../hooks/useFetch";
 
 export const Homepage = () => {
   let { loading, data, error } = useFetch(
-    "http://localhost:1337/api/blogs?populated=*"
+    "http://gycos.juanpabloguleal.com/api/blogs?populate=*"
   );
   if (loading) return <p>loading..</p>;
   if (error) return <p>Error</p>;
@@ -38,9 +38,11 @@ export const Homepage = () => {
       </section>
 
       <section className="w-full mx-auto bg-gray-50 dark:bg-gray-900 dark:text-white px-4 md:px-10">
-        <div className="py-16 bg-gray-100 flex flex-col md:flex-row items-center" data-aos="fade-left">
-          <div className="flex flex-col w-full md:w-1/3 px-5 mb-8 md:mb-0 text-center md:text-left">
-            <h1 className="text-3xl md:text-6xl font-bold">SERVICIOS DE AUTOMATIZACION</h1>
+        <div className="py-16 bg-gray-100 flex flex-col md:flex-col lg:flex-row items-center" data-aos="fade-left">
+          <div className="flex flex-col w-full lg:w-1/3 px-5 mb-8 md:mb-0 text-center md:text-left">
+            <span className="text-base text-3xl md:text-4xl font-bold">
+	      SERVICIOS DE AUTOMATIZACION
+	    </span>
             <span className="my-4 text-base md:text-lg xl:text-xl font-medium">
               Brindamos soluciones al sector industrial, desde el diseño electromecánico hasta la automatización de líneas de producción
             </span>

@@ -4,23 +4,23 @@ export const SliderClients = () => {
     const clients = [
         {
             id: 1,
-            img: "http://localhost:1337/uploads/teksid_1_01d774224a.png"
+            img: "http://gycos.juanpabloguleal.com/uploads/teksid.png"
         },
         {
             id: 2,
-            img: "http://localhost:1337/uploads/psw_98db542cb1.png"
+            img: "http://gycos.juanpabloguleal.com/uploads/psw.png"
         },
         {
             id: 3,
-            img: "http://localhost:1337/uploads/cat_9a6b3b33d3.png"
+            img: "http://gycos.juanpabloguleal.com/uploads/cat.png"
         },
         {
             id: 4,
-            img: "http://localhost:1337/uploads/reis_5fca84f051.png"
+            img: "http://gycos.juanpabloguleal.com/uploads/reis.png"
         },
         {
             id: 5,
-            img:"http://localhost:1337/uploads/denso_57bfc748fb.png"
+            img:"http://gycos.juanpabloguleal.com/uploads/denso.png"
         }        
     ]
 

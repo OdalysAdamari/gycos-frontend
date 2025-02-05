@@ -33,7 +33,7 @@ export const Navbar = () => {
   return (
     <header className={`font-inter fixed top-0 w-full z-50 border-b border-n-6 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'} ${openNav ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'}`}>
       <div className="container mx-auto flex items-center justify-between p-5 lg:px-10">
-        <a href="/" className="w-40">
+        <a href="/UI" className="w-40">
           <img src={logonav} alt="logoGYCOS" className="w-full" />
         </a>
 
@@ -53,35 +53,35 @@ export const Navbar = () => {
         </div>
         
           <a
-            href="/service"
+            href="/UI/service"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Servicios
           </a>
           <a
-            href="/portfolio"
+            href="/UI/portfolio"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Portafolio
           </a>
           <a
-            href="/aboutus"
+            href="/UI/aboutus"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Sobre Nosotros
           </a>
           <a
-            href="/blog"
+            href="/UI/blog"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Blog
           </a>
           <a
-            href="/contact"
+            href="/UI/contact"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >

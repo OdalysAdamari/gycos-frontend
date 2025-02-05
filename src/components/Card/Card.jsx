@@ -7,16 +7,16 @@ export const Card = ({blogs}) => {
   return (
     <>
       {blogs?.map((blog) => (
-        <Link to={`/blogg/${blog.id}`} key={blog.id} className="group">
+        <Link to={`/UI/blog/${blog.id}`} key={blog.id} className="group">
           <div className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <img
-              src={blog.coverImg || 'https://via.placeholder.com/500'}
+              src={ blog.attributes.blogCoverImg ? blog.attributes.blogCoverImg.data.attributes.url : '/UI/src/assets/logonav.svg'}
               alt={blog.attributes.blogTitle}
               className="object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72"
             />
             <div className="p-4">
               <p className="bg-green-500 text-white text-xs font-medium py-1 px-2 rounded-full uppercase inline-block mb-3">
-                {blog.attributes.blogCategory  || 'categoria'}
+                {blog.attributes.blogCategory  || 'Sin categoria'}
               </p>
               <h2 className="text-xl font-bold mb-2">{blog.attributes.blogTitle}</h2>
               <p className="text-sm text-gray-700 mb-3">{blog.attributes.blogDesc}</p>
