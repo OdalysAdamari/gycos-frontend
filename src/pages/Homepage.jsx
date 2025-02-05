@@ -56,9 +56,9 @@ export const Homepage = () => {
       </section>
 
    
-      <section className="py-16 px-4">
+      {/* <section className="py-16 px-4">
         <Projects />
-      </section>
+      </section> */}
 
       
       <section className="relative py-16 bg-fixed bg-cover bg-center text-black" style={{ backgroundImage: "url('https://www.google.com.mx/url?sa=i&url=https%3A%2F%2Fethic.es%2F2023%2F03%2Fel-enigma-de-la-imagen%2F&psig=AOvVaw119MLWXwxHuzNh5VqXg9wM&ust=1721700565668000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOCP1sXIuYcDFQAAAAAdAAAAABAE')" }}>
