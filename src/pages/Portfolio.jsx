@@ -1,4 +1,15 @@
+import useFetch from "../hooks/useFetch";
+
 export const Portfolio = () => {
+  let { loading, data, error } = useFetch(
+    "http://gycos.juanpabloguleal.com/api/proyectos?populate=*"
+  );
+
+  if (loading) return <p>loading..</p>;
+  if (error) return <p>Error</p>;
+
+  let projects = data.data;
+
     return (
       <div className="font-inter bg-gray-50 text-gray-800">
         {/* Header Section */}
@@ -16,11 +27,11 @@ export const Portfolio = () => {
   
         {/* Project Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 md:p-12">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="flex flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-xl">
-              <img className="w-full h-48 object-cover" src={`https://images.unsplash.com/photo-1593106421907-821f022cf8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`} alt={`Project ${i}`} />
+          {projects.map((project) => (
+            <div key={project.id} className="flex flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-xl">
+              <img className="w-full h-48 object-cover" src={ project.attributes.Img ? project.attributes.Img.data.attributes.url : '/UI/src/assets/logonav.svg' } alt={`Project ${project.id}`} />
               <div className="p-4">
-                <span className="block text-gray-800 text-lg font-medium text-center">Nombre de proyecto {i}</span>
+                <span className="block text-gray-800 text-lg font-medium text-center">{project.attributes.Name}</span>
               </div>
             </div>
           ))}
