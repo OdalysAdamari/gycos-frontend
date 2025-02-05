@@ -31,7 +31,7 @@ export const ServiceCard = () => {
           data-aos="fade-left"
         >
           <img
-            src={service.attributes.Img}
+            src={ service.attributes.Img ? service.attributes.Img.data.attributes.url : '/UI/src/assets/logonav.svg' }
             className="h-full w-full object-cover rounded-2xl opacity-60"
             alt={service.attributes.Name}
             loading="lazy"
