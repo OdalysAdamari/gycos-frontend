@@ -12,6 +12,8 @@ import {
 import { Blog } from "./Blog";
 import useFetch from "../hooks/useFetch";
 
+import { Link } from 'react-router-dom';
+
 export const Homepage = () => {
   let { loading, data, error } = useFetch(
     "http://gycos.juanpabloguleal.com/api/blogs?populate=*"
@@ -19,9 +21,6 @@ export const Homepage = () => {
   if (loading) return <p>loading..</p>;
   if (error) return <p>Error</p>;
   let blogs = data.data;
-
-
-
   return (
     <div className="font-inter bg-gray-100">
      
@@ -31,9 +30,9 @@ export const Homepage = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Maximiza tu Productividad con Nuestras <span className="text-green-500">Soluciones Personalizadas</span>
           </h1>
-          <button className="mt-6 px-8 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg hover:bg-green-400 transition duration-300">
+          <Link to="/UI/contact" className="mt-6 px-8 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg hover:bg-green-400 transition duration-300">
             Contáctanos
-          </button>
+          </Link>
         </div>
       </section>
 
