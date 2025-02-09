@@ -19,11 +19,11 @@ export const Portfolio = () => {
         </div>
   
         {/* Filter Category Section */}
-        <div className="flex justify-center space-x-4 py-6 md:py-10 bg-gray-100">
+        {/*<div className="flex justify-center space-x-4 py-6 md:py-10 bg-gray-100">
           <button className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-200 transition duration-300">ALL</button>
           <button className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-200 transition duration-300">CATEGORY 1</button>
           <button className="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-200 transition duration-300">CATEGORY 2</button>
-        </div>
+        </div>*/}
   
         {/* Project Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 md:p-12">
