@@ -20,7 +20,7 @@ export const Blog = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="https://images.unsplash.com/photo-1626314928277-1d373ddb6428?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              src="/uploads/electronics_f2491a1432.jpg"
               alt="Blog Header"
               className="object-cover rounded-lg max-h-64 sm:max-h-96 w-full h-full"
             />
