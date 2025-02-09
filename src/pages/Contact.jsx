@@ -5,7 +5,7 @@ export const Contact = () => {
     {/* Section: Expert Needed */}
     <div className="h-[30vh] flex flex-col justify-evenly items-center bg-gradient-to-r from-blue-500 to-slate-500 w-full text-white">
         <h1 className="text-3xl md:text-5xl font-bold mt-2 md:mt-4">¿Necesitas un experto?</h1>
-        <span className="text-xl md:text-3xl text-center">Suspendisse non libero id tellus imperdiet eleifend quis et ligula.</span>
+        <span className="text-xl md:text-3xl text-center">Contactanos, nosotros podemos ayudarte.</span>
     </div>
 
     {/* Section: Contact Form */}
@@ -26,14 +26,14 @@ export const Contact = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6 mr-2 text-blue-500">
                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                             </svg>
-                            123456789
+                            +52 811 530 0892
                         </p>
                         <p className="flex items-center text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6 mr-2 text-blue-500">
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                             </svg>
-                            contact@business.com
+                            victor.garcia@gycos.com
                         </p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export const Contact = () => {
         <div className="w-full max-w-6xl mx-auto px-6 lg:px-8 py-10">
             {/* Puedes agregar un mapa o cualquier otro contenido aquí */}
             <div className="bg-gray-300 w-full h-64 flex items-center justify-center rounded-lg shadow-lg">
-                <img className="w-full h-full object-cover" src="https://motor.elpais.com/wp-content/uploads/2022/01/google-maps-22.jpg"/>
+                {/*<img className="w-full h-full object-cover" src="https://motor.elpais.com/wp-content/uploads/2022/01/google-maps-22.jpg"/>*/}
             </div>
         </div>
     </div>
@@ -67,6 +67,7 @@ export const Contact = () => {
         <div className="container flex flex-col justify-center p-4 px-10 sm:px-4 sm:mx-auto md:p-8 sm:max-w-[80%]">
             <h2 className="mb-12 text-4xl font-bold text-center sm:text-5xl">Preguntas frecuentes</h2>
             <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+                {/*
                 <details className="w-full">
                     <summary className="py-2 outline-none cursor-pointer focus:underline">Optio maiores eligendi molestiae totam dolores similique?</summary>
                     <div className="px-4 pb-4">
@@ -85,7 +86,7 @@ export const Contact = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates aspernatur dolores in consequatur doloremque inventore reprehenderit, consequuntur perspiciatis architecto.</p>
                         <p>Sed consectetur quod tenetur! Voluptatibus culpa incidunt veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus autem eaque unde possimus quae.</p>
                     </div>
-                </details>
+                </details>*/}
             </div>
         </div>
     </section>
