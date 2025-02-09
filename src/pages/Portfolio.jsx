@@ -29,7 +29,7 @@ export const Portfolio = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 md:p-12">
           {projects.map((project) => (
             <div key={project.id} className="flex flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-xl">
-              <img className="w-full h-48 object-cover" src={ project.attributes.ProjectImg ? project.attributes.ProjectImg.data.attributes.url : '/UI/src/assets/logonav.svg' } alt={`Project ${project.id}`} />
+              <img className="w-full h-48 object-cover" src={ project.attributes.ProjectImg ? project.attributes.ProjectImg.data[0].attributes.url : '/UI/src/assets/logonav.svg' } alt={`Project ${project.id}`} />
               <div className="p-4">
                 <span className="block text-gray-800 text-lg font-medium text-center">{project.attributes.Name}</span>
               </div>
