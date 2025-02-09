@@ -50,7 +50,13 @@ export const Navbar = () => {
           <button onClick={toggleNav}
           className=" aling-end px-6 pb-6 "><CloseIcon/></button>
         </div>
-        
+          <a
+            href="/UI"
+            className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
+            onClick={handleClick}
+          >
+            Inicio
+          </a>
           <a
             href="/UI/service"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
