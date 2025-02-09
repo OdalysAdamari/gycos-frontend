@@ -6,7 +6,6 @@ export const Service = () => {
     <section className="font-inter">
     <ProductosMenu/>
     <ProductoSection/>
-    <Proceso/>
     </section>
     </div>
   )
