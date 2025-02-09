@@ -24,7 +24,7 @@ export const Homepage = () => {
   return (
     <div className="font-inter bg-gray-100">
      
-      <section className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/uploads/1738616004314_8f539914e0.png')" }}>
+      <section className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/uploads/dashboard-cover.png')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
