@@ -7,7 +7,7 @@ export const ProductoSection = () => {
         <div className="container mx-auto px-4 py-16 lg:px-8">
           {/* Integración de Procesos */}
           <div id="integracion" className="mb-20 p-8 rounded-lg shadow-lg bg-gray-800 bg-opacity-90">
-            <h2 className="text-5xl font-extrabold text-white mb-6 text-center">Integración de Procesos</h2>
+            <h2 className="text-4xl font-extrabold text-blue-500 mb-6 text-center">Integración de Procesos</h2>
             <p className="text-xl text-gray-400 text-center mb-12">
               Optimización e integración de procesos industriales para una mayor eficiencia.
             </p>
