@@ -22,35 +22,35 @@ const Layout = () =>{
 
 const router = createBrowserRouter([
   {
-    path:"/UI",
+    path:"/",
     element: <Layout/>,
     children:[
       {
-        path:"/UI",
+        path:"/",
         element:<Homepage />
       },
       {
-        path:"/UI/service",
+        path:"/servicios",
         element:<Service/>
       },
       {
-        path:"/UI/aboutus",
+        path:"/nosotros",
         element:<AboutUs/>
       },
       {
-        path:"/UI/portfolio",
+        path:"/portafolio",
         element:<Portfolio/>
       },
       {
-        path:"/UI/contact",
+        path:"/contacto",
         element:<Contact/>
       },
       {
-        path:"/UI/blog/:id",
+        path:"/blog/:id",
         element:<BlogContentPage/>
       },
       {
-        path:"/UI/blog",
+        path:"/blog",
         element:<Blog/>
       }
     ]

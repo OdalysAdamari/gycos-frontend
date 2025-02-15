@@ -32,8 +32,8 @@ export const Navbar = () => {
   return (
     <header className={`font-inter fixed top-0 w-full z-50 border-b border-n-6 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'} ${openNav ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'}`}>
       <div className="container mx-auto flex items-center justify-between p-5 lg:px-10">
-        <a href="/UI" className="w-16">
-          <img src="/uploads/logo_final_2_c6e211b380.png" alt="logoGYCOS" className="w-full" />
+        <a href="/" className="w-16">
+          <img src="/portal/uploads/logo_final_2_c6e211b380.png" alt="logoGYCOS" className="w-full" />
         </a>
 
         {/* Mobile Menu Button */}
@@ -51,42 +51,42 @@ export const Navbar = () => {
           className=" aling-end px-6 pb-6 "><CloseIcon/></button>
         </div>
           <a
-            href="/UI"
+            href="/"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Inicio
           </a>
           <a
-            href="/UI/service"
+            href="/servicios"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Servicios
           </a>
           <a
-            href="/UI/portfolio"
+            href="/portafolio"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Portafolio
           </a>
           <a
-            href="/UI/aboutus"
+            href="/nosotros"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Sobre Nosotros
           </a>
           <a
-            href="/UI/blog"
+            href="/blog"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >
             Blog
           </a>
           <a
-            href="/UI/contact"
+            href="/contacto"
             className="text-lg lg:text-sm font-semibold transition-colors hover:text-green-500 px-6 py-3"
             onClick={handleClick}
           >

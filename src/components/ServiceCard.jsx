@@ -6,7 +6,7 @@ import useFetch from "../hooks/useFetch";
 export const ServiceCard = () => {
 
   let { loading, data, error } = useFetch(
-    "http://gycos.juanpabloguleal.com/api/services?populate=*"
+    "http://gycos.com.mx/api/services?populate=*"
   );
 
   useEffect(() => {

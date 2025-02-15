@@ -31,7 +31,7 @@ export const ProductoSection = () => {
                     <div key={index} className="flex items-start space-x-4">
                       <div className="flex-shrink-0">
                         <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 text-white">
-                          <svg xmlns="/UI/src/assets/product-management.png" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+                          <svg xmlns="/src/assets/product-management.png" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
@@ -54,7 +54,7 @@ export const ProductoSection = () => {
               </div>
               <div className="flex flex-col justify-center">
 		<div className="self-center">
-                	<img src="/UI/src/assets/robot-arm.png" alt="Servicios" className="inset-0 rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full" />
+                	<img src="/src/assets/robot-arm.png" alt="Servicios" className="inset-0 rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full" />
                 </div>
 	      </div>
             </div>
@@ -69,7 +69,7 @@ export const ProductoSection = () => {
             <div className="grid gap-12 lg:grid-cols-2">
               <div className="flex flex-col justify-center">
 		<div className="self-center">
-                <img src="/UI/src/assets/mantenimiento.png" alt="Mantenimiento" className="rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full" />
+                <img src="/src/assets/mantenimiento.png" alt="Mantenimiento" className="rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full" />
               </div>
 	    </div>
               <div>
@@ -136,7 +136,7 @@ export const ProductoSection = () => {
               </div>
               <div className="flex flex-col justify-center">
 		<div className="self-center">
-                <img src="/UI/src/assets/product-management.png" alt="Refacción" className="w-[128px] h-[128px] rounded-lg shadow-lg hover:opacity-90 transition duration-300" />
+                <img src="/src/assets/product-management.png" alt="Refacción" className="w-[128px] h-[128px] rounded-lg shadow-lg hover:opacity-90 transition duration-300" />
               	</div>
 	      </div>
             </div>
@@ -151,7 +151,7 @@ export const ProductoSection = () => {
             <div className="grid gap-12 lg:grid-cols-2">
               <div className="flex flex-col justify-center">
 		<div className="self-center">
-                <img src="/UI/src/assets/workshop.png" alt="Capacitación" className="rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full" />
+                <img src="/src/assets/workshop.png" alt="Capacitación" className="rounded-lg shadow-lg hover:opacity-90 transition duration-300 w-full" />
               </div>  
 	    </div>
               <div>
