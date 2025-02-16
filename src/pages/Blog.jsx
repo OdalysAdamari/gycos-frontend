@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch';
 
 
 export const Blog = () => {
-  const { loading, data, error } = useFetch('http://strapi.gycos.com.mx/api/blogs?populate=*');
+  const { loading, data, error } = useFetch('https://strapi.gycos.com.mx/api/blogs?populate=*');
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
   const blogs = data.data;
@@ -20,7 +20,7 @@ export const Blog = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="http://strapi.gycos.com.mx/uploads/electronics_f2491a1432.jpg"
+              src="https://strapi.gycos.com.mx/uploads/electronics_f2491a1432.jpg"
               alt="Blog Header"
               className="object-cover rounded-lg max-h-64 sm:max-h-96 w-full h-full"
             />

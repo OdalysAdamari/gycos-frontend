@@ -6,7 +6,7 @@ import useFetch from "../hooks/useFetch";
 export const ServiceCard = () => {
 
   let { loading, data, error } = useFetch(
-    "http://strapi.gycos.com.mx/api/services?populate=*"
+    "https://strapi.gycos.com.mx/api/services?populate=*"
   );
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export const ServiceCard = () => {
           data-aos="fade-left"
         >
           <img
-            src={ service.attributes.Img ? "http://strapi.gycos.com.mx" + service.attributes.Img.data.attributes.url : '/src/assets/logonav.svg' }
+            src={ service.attributes.Img ? "https://strapi.gycos.com.mx" + service.attributes.Img.data.attributes.url : '/src/assets/logonav.svg' }
             className="h-full w-full object-cover rounded-2xl opacity-60"
             alt={service.attributes.Name}
             loading="lazy"

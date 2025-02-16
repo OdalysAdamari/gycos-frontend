@@ -10,7 +10,7 @@ export const Card = ({blogs}) => {
         <Link to={`/blog/${blog.id}`} key={blog.id} className="group">
           <div className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <img
-              src={ blog.attributes.blogCoverImg ? "http://strapi.gycos.com.mx" + blog.attributes.blogCoverImg.data.attributes.url : '/src/assets/logonav.svg'}
+              src={ blog.attributes.blogCoverImg ? "https://strapi.gycos.com.mx" + blog.attributes.blogCoverImg.data.attributes.url : '/src/assets/logonav.svg'}
               alt={blog.attributes.blogTitle}
               className="object-cover w-full h-48 sm:h-56 md:h-64 lg:h-72"
             />

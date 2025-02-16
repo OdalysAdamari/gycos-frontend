@@ -5,7 +5,7 @@ export const AboutUs = () => {
         <div className="font-inter bg-gray-50 text-gray-800">
       
           
-          <header className="relative py-16 px-10 bg-fixed bg-cover bg-center text-center text-white  flex flex-col items-center" style={{ backgroundImage: "url('http://strapi.gycos.com.mx/uploads/aboutus_background_19d448784e.png')" }}>
+          <header className="relative py-16 px-10 bg-fixed bg-cover bg-center text-center text-white  flex flex-col items-center" style={{ backgroundImage: "url('https://strapi.gycos.com.mx/uploads/aboutus_background_19d448784e.png')" }}>
             <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
             <div className="relative z-10">
             <h1 className="text-4xl font-bold">GYCOS S.A. DE C.V.</h1>
@@ -24,12 +24,12 @@ export const AboutUs = () => {
               </p>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <img className="rounded-lg shadow-lg" src="http://strapi.gycos.com.mx/uploads/aboutus_cover_07723d5cbd.png" alt="Company Image" />
+              <img className="rounded-lg shadow-lg" src="https://strapi.gycos.com.mx/uploads/aboutus_cover_07723d5cbd.png" alt="Company Image" />
             </div>
           </section>
       
          
-          <section className="relative py-16 px-10 bg-fixed bg-cover bg-center text-center" style={{ backgroundImage: "url('http://strapi.gycos.com.mx/uploads/aboutus_background_19d448784e.png')" }}>
+          <section className="relative py-16 px-10 bg-fixed bg-cover bg-center text-center" style={{ backgroundImage: "url('https://strapi.gycos.com.mx/uploads/aboutus_background_19d448784e.png')" }}>
             <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-8">POR QUÉ ELEGIRNOS</h2>

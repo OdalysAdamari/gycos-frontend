@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 export const Homepage = () => {
   let { loading, data, error } = useFetch(
-    "http://strapi.gycos.com.mx/api/blogs?populate=*"
+    "https://strapi.gycos.com.mx/api/blogs?populate=*"
   );
   if (loading) return <p>loading..</p>;
   if (error) return <p>Error</p>;
@@ -24,7 +24,7 @@ export const Homepage = () => {
   return (
     <div className="font-inter bg-gray-100">
      
-      <section className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('http://strapi.gycos.com.mx/uploads/dashboard_cover_058675caff.png')" }}>
+      <section className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('https://strapi.gycos.com.mx/uploads/dashboard_cover_058675caff.png')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
