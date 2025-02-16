@@ -18,7 +18,7 @@ export const ProductosMenu = () => {
           <a
             key={index}
             href={service.href}
-            className="flex flex-col items-center p-4 transform transition-transform hover:scale-105"
+            className="flex flex-col items-center text-center p-4 transform transition-transform hover:scale-105"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
