@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch';
 
 
 export const Blog = () => {
-  const { loading, data, error } = useFetch('http://gycos.com.mx/api/blogs?populate=*');
+  const { loading, data, error } = useFetch('http://strapi.gycos.com.mx/api/blogs?populate=*');
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
   const blogs = data.data;

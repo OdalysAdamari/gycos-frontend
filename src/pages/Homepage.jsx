@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 export const Homepage = () => {
   let { loading, data, error } = useFetch(
-    "http://gycos.com.mx/api/blogs?populate=*"
+    "http://strapi.gycos.com.mx/api/blogs?populate=*"
   );
   if (loading) return <p>loading..</p>;
   if (error) return <p>Error</p>;

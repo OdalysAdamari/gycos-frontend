@@ -4,23 +4,23 @@ export const SliderClients = () => {
     const clients = [
         {
             id: 1,
-            img: "http://gycos.juanpabloguleal.com/uploads/teksid.png"
+            img: "http://strapi.gycos.com.mx/uploads/teksid.png"
         },
         {
             id: 2,
-            img: "http://gycos.juanpabloguleal.com/uploads/psw.png"
+            img: "http://strapi.gycos.com.mx/uploads/psw.png"
         },
         {
             id: 3,
-            img: "http://gycos.juanpabloguleal.com/uploads/cat.png"
+            img: "http://strapi.gycos.com.mx/uploads/cat.png"
         },
         {
             id: 4,
-            img: "http://gycos.juanpabloguleal.com/uploads/reis.png"
+            img: "http://strapi.gycos.com.mx/uploads/reis.png"
         },
         {
             id: 5,
-            img:"http://gycos.juanpabloguleal.com/uploads/denso.png"
+            img:"http://strapi.gycos.com.mx/uploads/denso.png"
         }        
     ]
 

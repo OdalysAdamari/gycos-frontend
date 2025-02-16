@@ -2,7 +2,7 @@ import useFetch from "../hooks/useFetch";
 
 export const Portfolio = () => {
   let { loading, data, error } = useFetch(
-    "http://gycos.com.mx/api/proyectos?populate=*"
+    "http://strapi.gycos.com.mx/api/proyectos?populate=*"
   );
 
   if (loading) return <p>loading..</p>;
