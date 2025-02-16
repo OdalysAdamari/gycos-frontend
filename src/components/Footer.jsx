@@ -90,7 +90,7 @@ export const Footer = () => {
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center dark:text-gray-400">Todos los derechos reservados.</div>
+	<div className="py-6 text-sm text-center dark:text-gray-400">GYCOS S.A. DE C.V. {new Date(Date.now()).getFullYear()}. Todos los derechos reservados.</div>
 </footer>
   )
 }
