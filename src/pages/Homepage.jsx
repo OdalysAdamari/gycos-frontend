@@ -24,13 +24,13 @@ export const Homepage = () => {
   return (
     <div className="font-inter bg-gray-100">
      
-      <section className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/uploads/dashboard_cover_058675caff.png')" }}>
+      <section className="relative flex items-center justify-center min-h-screen bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('http://strapi.gycos.com.mx/uploads/dashboard_cover_058675caff.png')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Maximiza tu Productividad con Nuestras <span className="text-green-500">Soluciones Personalizadas</span>
           </h1>
-          <Link to="/UI/contact" className="mt-6 px-8 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg hover:bg-green-400 transition duration-300">
+          <Link to="/contact" className="mt-6 px-8 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg hover:bg-green-400 transition duration-300">
             Contáctanos
           </Link>
         </div>

@@ -20,7 +20,7 @@ export const Blog = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="/uploads/electronics_f2491a1432.jpg"
+              src="http://strapi.gycos.com.mx/uploads/electronics_f2491a1432.jpg"
               alt="Blog Header"
               className="object-cover rounded-lg max-h-64 sm:max-h-96 w-full h-full"
             />
