@@ -33,7 +33,7 @@ export const Navbar = () => {
     <header className={`font-inter fixed top-0 w-full z-50 border-b border-n-6 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'} ${openNav ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'}`}>
       <div className="container mx-auto flex items-center justify-between p-5 lg:px-10">
         <a href="/" className="w-16">
-          <img src="/portal/uploads/logo_final_2_c6e211b380.png" alt="logoGYCOS" className="w-full" />
+          <img src="/uploads/logo_final_2_c6e211b380.png" alt="logoGYCOS" className="w-full" />
         </a>
 
         {/* Mobile Menu Button */}
