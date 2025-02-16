@@ -24,7 +24,7 @@ export const AboutUs = () => {
               </p>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <img className="rounded-lg shadow-lg" src="/uploads/aboutus_cover_07723d5cbd.png" alt="Company Image" />
+              <img className="rounded-lg shadow-lg" src="http://strapi.gycos.com.mx/uploads/aboutus_cover_07723d5cbd.png" alt="Company Image" />
             </div>
           </section>
       
