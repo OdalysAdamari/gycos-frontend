@@ -30,13 +30,13 @@ export const Homepage = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Maximiza tu Productividad con Nuestras <span className="text-green-500">Soluciones Personalizadas</span>
           </h1>
-          <Link to="/contact" className="mt-6 px-8 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg hover:bg-green-400 transition duration-300">
+          <Link to="/contacto" className="mt-6 px-8 py-3 bg-green-500 text-white text-lg font-semibold rounded-lg hover:bg-green-400 transition duration-300">
             Contáctanos
           </Link>
         </div>
       </section>
 
-      <section className="w-full mx-auto bg-gray-50 dark:bg-gray-900 dark:text-white px-4 md:px-10">
+      <section className="w-full mx-auto bg-gray-50 dark:bg-gray-900 dark:text-black px-4 md:px-10">
         <div className="py-16 bg-gray-100 flex flex-col md:flex-col lg:flex-row items-center" data-aos="fade-left">
           <div className="flex flex-col w-full lg:w-1/3 px-5 mb-8 md:mb-0 text-center md:text-left">
             <span className="text-base text-3xl md:text-4xl font-bold">
